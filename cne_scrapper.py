@@ -1,8 +1,6 @@
 from bs4 import BeautifulSoup
 import urllib.request
-import ssl
 
-ssl._create_default_https_context = ssl._create_unverified_context
 
 def get_name(nacionalidad: str, ci: str) -> str:
 	try:
